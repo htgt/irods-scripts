@@ -1,0 +1,1 @@
+jq -n '{avus: [{attribute: "id_run", value: "23524", o: "="}, {attribute: "target", value: "1", o: "="}], timestamps: [{"created": "2017-01-01T00:00:00",     "operator": "n>="}]}' | /software/npg/20170228/bin/baton-metaquery --zone seq --obj --timestamp | jq .[]
